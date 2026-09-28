@@ -20,3 +20,10 @@ print(my_set)
 
 my_set.clear()
 print("Hola , aca esta limpio o se limpiaron los datos  " + str(my_set))
+
+
+'''8. Eliminar duplicados
+Crea sin_duplicados(lista) que retorne la lista sin elementos repetidos. 
+Hazla de dos formas: con un set y con un for, manteniendo el orden original.'''
+
+
