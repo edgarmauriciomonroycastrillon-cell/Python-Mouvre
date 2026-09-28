@@ -8,11 +8,6 @@
 
 
 
-
-
-num1 = int(input("Ingrese numero 1 "))
-num2 = int(input("Ingrese numero 2 "))
-
 def sumar (num1, num2):
     resultado = num1 + num2
     print(f"El resultado de la suma es: {resultado}")
@@ -32,9 +27,23 @@ def dividir (num1, num2):
 
 
 
-sumar(num1, num2)  # Colocar los parametros al llamar la funciones  
-restar(num1, num2)
-multiplicar(num1, num2)
-dividir(num1, num2)
+continuar = "SI"
+while continuar.lower() == "si":
+    num1 = int(input("Ingrese numero 1 : "))
+    num2 = int(input("Ingrese numero 2 : "))
+    operacion = input("Ingrese la operacion: ")
+
+    if operacion.lower() == "sumar" : 
+        sumar(num1, num2)
+    elif operacion.lower() == "restar" :
+        restar(num1, num2)
+    elif operacion.lower() == "multiplicar" : 
+        multiplicar(num1, num2)
+    elif operacion.lower() == "dividir" :
+        dividir(num1, num2)
+    else:
+        print("Operacion NO valida") 
+    continuar = input("Si desea continuar escribe SI : ")
+
 
 
