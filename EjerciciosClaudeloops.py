@@ -1,3 +1,8 @@
+import turtle # Para moverse
+import random # Numero aleatorios
+
+
+
 '''Ejercicio 1 – Contar
 Con for y range(), imprime:
 
@@ -86,25 +91,81 @@ Pide al usuario que adivine hasta que acierte. Dile "más alto" o "más bajo" en
 '''Ejercicio 7 – Reto: menú con while
 Mejora tu calculadora: que se repita en un while hasta que el usuario escriba "salir" en la operación. Usa break.'''
     
-while True:    
-    numero1 = float(input("Ingresa el 1 numero "))
-    numero2 = float(input("Ingresa el 2 numero "))
+#while True:    
+#    numero1 = float(input("Ingresa el 1 numero "))
+#    numero2 = float(input("Ingresa el 2 numero "))
 
 
-    operacion = input("Ingresa la operacion: \n 1 = Suma (+) \n 2 = Resta (-) \n 3 = Multiplicacion (*) \n 4 = Division (/) \n Si quiere salir escriba Salir \n")
+#    operacion = input("Ingresa la operacion: \n 1 = Suma (+) \n 2 = Resta (-) \n 3 = Multiplicacion (*) \n 4 = Division (/) \n Si quiere salir escriba Salir \n")
 
-    if operacion == "1":
-        print(f"Tu suma es: {numero1 + numero2}")
-    elif operacion == "2":
-        print(f"Tu resta es: {numero1 - numero2}")
-    elif operacion == "3":
-        print(f"Tu multiplicacion es: {numero1 * numero2}")
-    elif operacion == "4":
-        if numero2 == 0:
-            print("No se puede dividir entre cero (0)")
-        else:
-            print(f"Tu division es: {numero1 / numero2}")
-    elif operacion.lower() == "salir":
+#    if operacion == "1":
+#        print(f"Tu suma es: {numero1 + numero2}")
+#    elif operacion == "2":
+#        print(f"Tu resta es: {numero1 - numero2}")
+#    elif operacion == "3":
+#        print(f"Tu multiplicacion es: {numero1 * numero2}")
+#    elif operacion == "4":
+#        if numero2 == 0:
+#            print("No se puede dividir entre cero (0)")
+#        else:
+#            print(f"Tu division es: {numero1 / numero2}")
+#    elif operacion.lower() == "salir":
+#        break
+#    else:
+#        print("Operacion NO valida")
+
+
+
+
+
+#Ejercicio de hacer un cuadrado
+#ventana = turtle.Screen()  #Interfaz grafica
+#ventana.bgcolor("white")   #Cambiamos el color
+#tortuga = turtle.Turtle()   # Lo que se va a mover
+#tortuga.speed(1)    #Cambiamos la velocidad de como se cambia
+
+
+#for i in range(4):
+#    tortuga.forward(100)  #Muevase 100 espacios
+#    tortuga.right(90)     # Muevase 90 grados
+#ventana.exitonclick()      #Salir con click
+
+
+
+#Ejercicio dibujar una estrella
+#ventana = turtle.Screen()  #Interfaz grafica
+#ventana.bgcolor("white")   #Cambiamos el color
+#tortuga = turtle.Turtle()   # Lo que se va a mover
+#tortuga.speed(1)    #Cambiamos la velocidad de como se cambia
+
+#for i in range(5):
+#    tortuga.forward(150)
+#    tortuga.right(144)
+#    tortuga.forward(150)
+#    tortuga.left(72)
+#ventana.exitonclick()
+
+
+# Break
+meta = 20
+caracol1 = 0
+caracol2 = 0
+
+while True:
+    avance_caracol_1 = random.randint(1,4)
+    avance_caracol_2 = random.randint(1,4)
+
+    caracol1 += avance_caracol_1
+    caracol2 += avance_caracol_2
+
+    print(f"El caracol 1 avanzo: {avance_caracol_1} , con total de avance {caracol1} ")
+    print(f"El caracol 2 avanzo: {avance_caracol_2} , con total de avance {caracol2} ")
+    print("--------------------------------------------------------------------------")
+    if caracol1 == 20 or caracol2 == 20:
         break
-    else:
-        print("Operacion NO valida")
+if caracol1 > caracol2:
+    print(f"Felicidades  Caracol 1 GANASTE")
+elif caracol2 > caracol1:
+    print("Felicidades Caracol 2 GANASTE")
+else:
+    print("Empate")
