@@ -147,25 +147,38 @@ Mejora tu calculadora: que se repita en un while hasta que el usuario escriba "s
 
 
 # Break
-meta = 20
-caracol1 = 0
-caracol2 = 0
+#meta = 20
+#caracol1 = 0
+#caracol2 = 0
 
-while True:
-    avance_caracol_1 = random.randint(1,4)
-    avance_caracol_2 = random.randint(1,4)
+#while True:
+#    avance_caracol_1 = random.randint(1,4)
+#    avance_caracol_2 = random.randint(1,4)
 
-    caracol1 += avance_caracol_1
-    caracol2 += avance_caracol_2
+#    caracol1 += avance_caracol_1
+#    caracol2 += avance_caracol_2
 
-    print(f"El caracol 1 avanzo: {avance_caracol_1} , con total de avance {caracol1} ")
-    print(f"El caracol 2 avanzo: {avance_caracol_2} , con total de avance {caracol2} ")
-    print("--------------------------------------------------------------------------")
-    if caracol1 == 20 or caracol2 == 20:
-        break
-if caracol1 > caracol2:
-    print(f"Felicidades  Caracol 1 GANASTE")
-elif caracol2 > caracol1:
-    print("Felicidades Caracol 2 GANASTE")
-else:
-    print("Empate")
+#    print(f"El caracol 1 avanzo: {avance_caracol_1} , con total de avance {caracol1} ")
+#    print(f"El caracol 2 avanzo: {avance_caracol_2} , con total de avance {caracol2} ")
+#    print("--------------------------------------------------------------------------")
+#    if caracol1 >= 20 or caracol2 >= 20:
+#        break
+
+#if caracol1 > caracol2:
+#    print(f"Felicidades  Caracol 1 GANASTE")
+#elif caracol2 > caracol1:
+#    print("Felicidades Caracol 2 GANASTE")
+#else:
+#    print("Empate")
+
+
+
+
+
+#Continue
+#lista_numero = [34,10,23,57,19,2,8,3]
+
+#for i in lista_numero:
+#    if i % 2 != 0:
+#        continue
+#    print(f" {i} es numero Par")

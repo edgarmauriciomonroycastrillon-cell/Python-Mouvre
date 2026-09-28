@@ -23,11 +23,27 @@ caracol2.goto(-350,50)   #coordenadas
 
 meta = 300
 
+#Linea de meta
+meta_linea = turtle.Turtle()
+meta_linea.penup()
+meta_linea.goto(meta, 150)
+meta_linea.pendown()
+meta_linea.goto(meta, -150)
+meta_linea.hideturtle()
+
+
+
+
+
 while True:
     avance_caracol_1 = random.randint(1,20)
     avance_caracol_2 = random.randint(1,20)
 
-    caracol1.forward(avance_caracol_1)
+
+    if avance_caracol_1 % 2 == 0 and avance_caracol_2 % 2 == 0:
+        continue 
+
+    caracol1.forward(avance_caracol_1)    
     caracol2.forward(avance_caracol_2)
 
     print(f"El caracol 1 avanzo: {avance_caracol_1} , con total de avance {caracol1.xcor()} ")
