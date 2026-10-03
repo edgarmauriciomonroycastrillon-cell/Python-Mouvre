@@ -47,7 +47,7 @@ print("Lista actualizada con insert se ve asi: \n " + str(dates))
 
 
 # Ordenar de mayor a menor 
-print(dates.sort)
+print(dates.sort())
 
 
 # Limpio toda la lista osea elinino todos los elementos que estan en la lita

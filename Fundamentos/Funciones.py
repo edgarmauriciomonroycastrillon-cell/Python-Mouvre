@@ -43,7 +43,7 @@ while continuar.lower() == "si":
         dividir(num1, num2)
     else:
         print("Operacion NO valida") 
-    continuar = input("Si desea continuar escribe SI : ")
+    continuar = input("Si desea continuar escribe SI :")
 
 
 
