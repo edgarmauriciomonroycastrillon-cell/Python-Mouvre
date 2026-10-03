@@ -3,10 +3,10 @@ class Pikachu_Evolution:
 
     def __init__(self, nombre, salud, nivel, voltaje_max, amperaje_max, color):  # Atributo de instancia
         self.__nombre = nombre
-        self.__salud = salud
-        self.__nivel = nivel
+        self.set_salud(salud)
+        self.set_nivel(nivel)
         self.__voltaje_max = voltaje_max
-        self.__amperaje_max = amperaje_max
+        self.set_amperaje_max(amperaje_max)
         self.color = color
 
 
@@ -84,17 +84,18 @@ class Pikachu_Evolution:
 
 
 
-
-
-
-
-
-
-pikachu_3 = Pikachu_Evolution("Ramiro", 152, 50, 50, 4, "Morado")        
+pikachu_3 = Pikachu_Evolution("Ramiro", 152, 50, 50, 4, "Morado")   
+# Getters     
 print(f"Nombre: {pikachu_3.nombre} y su nivel de batalla es :  {pikachu_3.get_nivel()} y es de tipo : {pikachu_3.tipo}")
 
 # Modificar atributos de instancia del objeto
+
+# Setters
 pikachu_3.__nivel = 700
+
+
+
+
 # Modificar atributos de clase
 #Pikachu_Evolution.tipo = 'Fuego'
 

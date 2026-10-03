@@ -21,7 +21,7 @@ class pikachu:
 pikachu_1 = pikachu('mario', 120, 200)   # puede ir con clave y con posicion , pero si se combina simepre primero las posiciones
 pikachu_2 = pikachu('Roberto', salud=200, nivel=5)
 
-print("-------------------------------------------------------------------")
+
 print(pikachu_1.tipo, pikachu_1.nombre, pikachu_1.nivel, pikachu_1.salud)
 print(f"El picachu {pikachu_1.nombre} ataca")
 pikachu_1.atacar()
