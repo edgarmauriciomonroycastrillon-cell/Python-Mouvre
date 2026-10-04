@@ -39,8 +39,13 @@ class TipoElectrico(Pokemon):
         return self.__amperaje_max
 
     @amperaje_max.setter
-    def amperaje_max(self, amperaje):
+    def amperaje_max(self, amperaje): 
         if not 0 < amperaje <= 200:
             print("Amperaje NO valido")
         else:
             self.__amperaje_max = amperaje 
+
+         
+    def atacar(self):
+        print(f"Ataca con electricidad y genera {(self.amperaje_max + self.voltaje_max)/4} daño")
+

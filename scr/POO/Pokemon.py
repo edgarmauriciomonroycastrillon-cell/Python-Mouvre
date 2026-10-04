@@ -1,4 +1,8 @@
-class Pokemon:
+from abc import ABC, abstractmethod    # para utilizar clases abstratas 
+
+# Clases abs no puede ser implementadas o referenciadas directamente
+
+class Pokemon(ABC):
 
 
     ## Construtor
@@ -47,3 +51,7 @@ class Pokemon:
             self.__nivel = None   # Por si colocan un valor invalido por defecto el nivel va a hacer 1
         else: 
             self.__nivel = nivel
+
+    @abstractmethod   # para que sea abs
+    def atacar(self):
+        pass  # para dejar el metodo vacio, solo en una plantilla , deben cumplir las clases hijas que hereden
