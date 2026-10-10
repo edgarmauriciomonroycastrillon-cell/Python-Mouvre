@@ -8,7 +8,7 @@ for x in lista:
     cuadrado_dict[x] = x**2
 print(cuadrado_dict)
 
-cuadrado_dict_compr = [y ** 2 for y in lista]  # Lo musmo que arriba pero en un sola linea de codigo
+cuadrado_dict_compr = {y ** 2 for y in lista}  # Lo musmo que arriba pero en un sola linea de codigo
 print(cuadrado_dict_compr)
 
 # Filtros igual que los de la lista
