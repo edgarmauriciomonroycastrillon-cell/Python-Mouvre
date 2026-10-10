@@ -10,8 +10,8 @@ print(cuadrado)
 
 # List Comprenhension
 
-cuadrado_list = [y ** 2 for y in lista]  # Lo musmo que arriba pero en un sola linea de codigo
-print(cuadrado_list)
+cuadrado_compr = [y ** 2 for y in lista]  # Lo musmo que arriba pero en un sola linea de codigo
+print(cuadrado_compr)
 
 
 
