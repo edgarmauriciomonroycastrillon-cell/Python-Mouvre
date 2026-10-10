@@ -1,7 +1,7 @@
 
-lista = [1,2,3,4,5]
+lista = [1,2,3,4,5,5]  # no permite elementos duplicados 
 
-cuadrado_set = set()
+cuadrado_set = set()  
 
 # Guardar lista con numeros cuadrados
 for x in lista:
