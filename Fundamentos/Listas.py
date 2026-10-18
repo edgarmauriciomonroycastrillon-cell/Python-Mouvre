@@ -23,7 +23,7 @@ print(solo_edad)
 dates.remove("Monroy")
 
 
-#Saber la posicion del onjeto en la lista
+#Saber la posicion del objeto en la lista
 print("La Posicion del nombre mauricio es: " + str(dates.index("Mauro")))
 
 #Contar cuantas veces los elementos en la lista , contar elementos de la propia lista
@@ -50,6 +50,6 @@ print("Lista actualizada con insert se ve asi: \n " + str(dates))
 print(dates.sort())
 
 
-# Limpio toda la lista osea elinino todos los elementos que estan en la lita
+# Limpio toda la lista osea elimino todos los elementos que estan en la lita
 dates.clear()
 print(dates)

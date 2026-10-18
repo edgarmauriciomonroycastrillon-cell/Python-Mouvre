@@ -10,7 +10,7 @@ print(cuadrado)
 
 # List Comprenhension
 
-cuadrado_compr = [y ** 2 for y in lista]  # Lo musmo que arriba pero en un sola linea de codigo
+cuadrado_compr = [y ** 2 for y in lista]  # Lo mismo que arriba pero en un sola linea de codigo
 print(cuadrado_compr)
 
 

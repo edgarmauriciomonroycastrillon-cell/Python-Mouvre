@@ -6,7 +6,7 @@ class Charmander(TipoFuego):
 
 
 
-if __name__ == "__main__":    # solo ejecutar una porcion de codigo
+if __name__ == "__main__":    # solo ejecutar una porcion de codigo. salta estas lineas
     charmander_1 = Charmander('Sof', 700, 1000, 'Rojo', 500)
     print("---------------------------------------------------------------------")
     print(f"Nombre: {charmander_1.nombre} \nNivel: {charmander_1.nivel} \nSalud: {charmander_1.salud} \nColor: {charmander_1.color} \nTemperatura Maxima: {charmander_1.temperatura_maxima}")
