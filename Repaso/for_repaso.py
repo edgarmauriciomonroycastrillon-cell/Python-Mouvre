@@ -3,7 +3,7 @@ import random
 
 # Imprimir la tabla del 1 al 5
 
-'''
+
 
 for i in range(1,6):   # hago un for , i recorre el rango de 1 a 5 
     for x in range(1,11):    # hago un for anidado , donde x recorre el rango de 1 a 10
@@ -263,4 +263,3 @@ aplanada = [n for fila in matriz for n in fila]
 transpuesta = [[fila[i] for fila in matriz] for i in range(3)]
 
 print(aplanada, transpuesta)
-'''
